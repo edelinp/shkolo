@@ -18,7 +18,7 @@
         @livewireStyles
     </head>
     <body class="font-inter antialiased bg-gray-100  text-gray-600">
-        <div class="flex h-[100dvh] overflow-hidden">
+        <div class="flex h-[100dvh]">
             <div class="grow">
                 {{ $slot }}
             </div>
