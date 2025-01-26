@@ -1,0 +1,14 @@
+services:
+    shkolo:
+        container_name: shkolo
+        build:
+            context: .
+            target: php
+            args:
+                - APP_ENV=${APP_ENV}
+        environment:
+            - APP_ENV=${APP_ENV}
+        volumes:
+            - ./:/app
+        ports:
+            - 8080:8080
